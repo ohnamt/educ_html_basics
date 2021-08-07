@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.section_1 {
+    background-color: #eee;
+    min-height: 100vh;
+}
+
+.section_1 .container{
+    font-family: sans-serif;
+    border: 1px solid #e1e2e4;
+    padding-top: 20px;
+    padding-left: 15px;
+    width: 361px;
+    height: 318px;
+    background: #fff;
+}
+
+.section_1 .container .title{
+    margin-top: 19px;
+    margin-bottom: 4px;
+}
+
+.section_1 .container .description{
+    color: #8a8c8b;
+}
+.section_1 .container .main_text{
+    color: #2e2e2e;
+    margin-top: 17px;
+    font-size: 17px;
+}
+.section_1 .container .image_wrapper{
+    width: 114px;
+}
+
+.section_1 .container .image_wrapper img{
+    width: 100%;
+}

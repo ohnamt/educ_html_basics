@@ -1,0 +1,36 @@
+.article-teaser{
+    font-family: sans-serif;
+    background: #fff;
+    border: 1px solid #DEE2E6;
+    width: 348px;
+    padding-bottom: 0px;
+}
+.article-teaser .image {
+    width: 100%;
+}
+.article-teaser .title,
+.article-teaser .description,
+.article-teaser .readmore{
+    margin:16px;
+}
+.article-teaser .title,
+.article-teaser .readmore{
+    color: #007BFF;
+
+}
+.article-teaser .description{
+    color: #444;
+    margin-top: 10px;
+    line-height: 24px;
+    margin-bottom: 11px;
+}
+.article-teaser .title{
+    font-weight: normal;
+    margin-top: 15px;
+    font-size: 20px;
+    margin-bottom: 0; 
+}
+.article-teaser .readmore{
+    text-decoration: none;
+    font-size: 14px;
+}

@@ -1,0 +1,100 @@
+// DEFAULT STYLES START
+
+$color-blue: #0389d4;
+$color-grey: #9f9f9e;
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+li,
+ul {
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+// ??? CONTENT FOR ALL SECTIONS
+.content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// DEFAULT STYLES END
+
+// ??? COMMENTS OF CODE
+// SECTION_FEATURE STYLES START
+
+.section_feature {
+  padding: 20px 0;
+  .title {
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .features_list {
+    .raw_features {
+      display: flex;
+      justify-content: space-between;
+      // ??? MEDIA
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+      .feature_item {
+        color: $color-blue;
+        display: flex;
+        margin-bottom: 20px;
+        // ??? MAX SIZE
+        max-width: 340px;
+        width: 100%;
+        // ??? 1:1
+        flex: 1;
+
+        &:nth-child(2) {
+          // ??? WHY NOT MARGIN: 0 20px;
+          margin-left: 20px;
+          margin-right: 20px;
+
+          // ??? MEDIA FOR ELEMENT
+          @media (max-width: 768px) {
+            margin-left: 0;
+            margin-right: 0;
+          }
+        }
+
+        &-empty {
+          margin: 0;
+        }
+        .feature_icon {
+          font-size: 30px;
+          padding-right: 10px;
+          width: 40px;
+        }
+        .feature_name {
+          font-size: 25px;
+          font-weight: normal;
+        }
+
+        .feature_description {
+          font-size: 18px;
+          color: $color-grey;
+        }
+      }
+    }
+  }
+}
+
+// SECTION_FEATURE STYLES END

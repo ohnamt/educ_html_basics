@@ -1,0 +1,159 @@
+$color-green: #235c55;
+$font-header: "Roboto Condensed", sans-serif;
+$color-grey: #dbdbdb;
+$color-grey-dark: #535154;
+$color-red: #d81e5d;
+$color-yellow: #ffe6de;
+body {
+  font-family: sans-serif;
+}
+
+.header-region {
+  background: #ffe6de;
+  padding: 10px;
+  margin-bottom: 30px;
+
+  .layout {
+    display: flex;
+    align-items: center;
+  }
+
+  .site-name {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .share-calendar {
+    margin-left: auto;
+  }
+
+  .social-networks {
+    margin-top: 15px;
+  }
+}
+
+.site-logo {
+  .logo-image {
+    width: 99px;
+  }
+}
+
+.site-name {
+  font-family: $font-header;
+  color: $color-green;
+  font-weight: bold;
+  .title {
+    font-size: 32px;
+    margin-bottom: 3px;
+  }
+  .description {
+    font-size: 16px;
+    margin-top: 0;
+  }
+}
+
+.main-button {
+  background: #d81e5d;
+  font-family: sans-serif;
+  color: #ffe6de;
+  text-decoration: none;
+  padding: 5px 11px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.site-logo {
+  .logo-image {
+    width: 95px;
+  }
+}
+
+.social-networks {
+  text-align: center;
+}
+
+.color-choice {
+  .label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .dropdown {
+    padding: 5px;
+    border: 1px solid $color-grey;
+    border-radius: 5px;
+  }
+}
+
+.single-calendar{
+  color: $color-grey-dark;
+  margin-top: 40px;
+
+  .deletecalendar,
+  .addcalendar {
+    visibility: hidden;
+    font-size: 15px;
+    vertical-align: middle;
+    padding:0 15px;
+    cursor:pointer;
+
+    &:hover {
+      color: $color-red;
+    }
+  } 
+  &:hover .deletecalendar,
+  &:hover .addcalendar{
+    visibility: visible;
+  }
+
+  .calendar{
+    border: 1px solid $color-green;
+    border-radius: 10px;
+    padding: 15px 10px;
+    width: 270px;
+  }
+
+  .monthname{
+    text-align: center;
+    font-family: $font-header;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+
+  .weekdays{
+    color: lighten($color-grey-dark, 50%);
+  }
+  
+  .dayname{
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 7px;
+  }
+
+  .daynumber{
+    font-weight: bold;
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+    
+  }
+.daynumber:hover {
+  background: $color-yellow;
+  cursor: pointer;
+  border: 0,5px solid $color-yellow;
+  border-radius:10px;
+}
+
+
+  .daynumber:last-child,
+  .dayname:last-child{
+    color: $color-red;
+  }
+}
+
+._container {
+  max-width: 960px;
+  margin: 0 auto;
+}
