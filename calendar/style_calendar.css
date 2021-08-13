@@ -4,7 +4,7 @@ body {
 
 .header-region {
   background: #ffe6de;
-  padding: 10px;
+  padding: 0 10px;
   margin-bottom: 30px;
 }
 
@@ -17,13 +17,41 @@ body {
           align-items: center;
 }
 
+@media (max-width: 450px) {
+  .header-region .layout {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .header-region .site-logo {
+    margin: 0 auto;
+  }
+}
+
 .header-region .site-name {
   margin-left: 20px;
   margin-top: 10px;
 }
 
+@media (max-width: 450px) {
+  .header-region .site-name {
+    margin-left: 0;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
 .header-region .share-calendar {
   margin-left: auto;
+}
+
+@media (max-width: 450px) {
+  .header-region .share-calendar {
+    margin: 0 auto;
+  }
 }
 
 .header-region .social-networks {
@@ -31,7 +59,14 @@ body {
 }
 
 .site-logo .logo-image {
-  width: 99px;
+  width: 95px;
+  margin-top: 10px;
+}
+
+@media (max-width: 450px) {
+  .site-logo .logo-image {
+    width: 70px;
+  }
 }
 
 .site-name {
@@ -43,6 +78,14 @@ body {
 .site-name .title {
   font-size: 32px;
   margin-bottom: 3px;
+}
+
+@media (max-width: 450px) {
+  .site-name .title {
+    margin-left: 0;
+    padding-top: 5px;
+    margin-top: 0;
+  }
 }
 
 .site-name .description {
@@ -59,10 +102,6 @@ body {
   border-radius: 14px;
   font-size: 14px;
   font-weight: bold;
-}
-
-.site-logo .logo-image {
-  width: 95px;
 }
 
 .social-networks {
@@ -147,8 +186,56 @@ body {
   color: #d81e5d;
 }
 
+.control-panel {
+  padding: 0 10px;
+}
+
+.calendar-list {
+  padding: 0 10px;
+}
+
+.calendar-list .single-calendar {
+  margin-left: 50px;
+}
+
+.calendar-list .layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -50px;
+}
+
+.register-region {
+  margin: 50px 0;
+  padding: 50px 0;
+  background: black url("/img/background_img.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.standart-form .input,
+.standart-form .select {
+  display: block;
+  width: 200px;
+  margin: 12px auto;
+  border: 1px solid #535154;
+  padding: 5px;
+  height: 20px;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.standart-form .checkbox,
+.standart-form .submit {
+  cursor: pointer;
+}
+
 ._container {
   max-width: 960px;
   margin: 0 auto;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style_calendar.css.map */
